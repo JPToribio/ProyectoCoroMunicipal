@@ -39,6 +39,7 @@ function myFunction() {
   vid.setAttribute("controls", "controls");
   vid.autoplay = true;
   vid.loop = true;
+vid.muted = true;
   document.getElementById("div1").appendChild(vid);
 
 
@@ -48,14 +49,14 @@ snd1.play(); snd2.play(); // Now both will play at the same time
 }
 var snd1  = new Audio();
 var src1  = document.createElement("source");
-src1.type = "audio/ogg";
-src1.src  = "audio/nintendogs.ogg";
+src1.type = "audio/mpeg";
+src1.src  = "audio/bajos.mpeg";
 snd1.appendChild(src1);
 
 var snd2  = new Audio();
 var src2  = document.createElement("source");
-src2.type = "audio/ogg";
-src2.src  = "audio/frogs.ogg";
+src2.type = "audio/mpeg";
+src2.src  = "audio/contraltos.mpeg";
 snd2.appendChild(src2);
 
 function enableMute(x) { 
