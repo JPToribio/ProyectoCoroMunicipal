@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="mystyle.css">
+<title>Proyecto del Coro Municipal</title>
+</head>
+<body>
+<h1>Proyecto del Coro Municipal</h1>
+<div class="center">
+<button class="btn" onclick="myFunction()">Reproducir</button>
+</div>
+
+<div id="div1" class="center">
+
+</div>
+
+<div class="center">
+
+<button class="btn" onclick="enableMute(snd1)">Mutear track 1</button>
+<button class="btn" onclick="disableMute(snd1)" type="button">Enable sound1</button>
+
+<button class="btn" onclick="enableMute(snd2)" type="button">Mute sound2</button>
+<button class="btn" onclick="disableMute(snd2)" type="button">Enable sound2</button>
+</div>
+
+
+<script>
+function myFunction() {
+  var vid = document.createElement("VIDEO");
+
+  if (vid.canPlayType("video/mp4")) {
+    vid.setAttribute("src","videos/video.mp4");
+  } else {
+    x.setAttribute("src","videos/video.ogg");
+  }
+
+  vid.setAttribute("width", "320");
+  vid.setAttribute("height", "240");
+  vid.setAttribute("controls", "controls");
+  vid.autoplay = true;
+  vid.loop = true;
+  document.getElementById("div1").appendChild(vid);
+
+
+snd1.play(); snd2.play(); // Now both will play at the same time
+
+
+}
+var snd1  = new Audio();
+var src1  = document.createElement("source");
+src1.type = "audio/ogg";
+src1.src  = "audio/nintendogs.ogg";
+snd1.appendChild(src1);
+
+var snd2  = new Audio();
+var src2  = document.createElement("source");
+src2.type = "audio/ogg";
+src2.src  = "audio/frogs.ogg";
+snd2.appendChild(src2);
+
+function enableMute(x) { 
+  x.muted = true;
+} 
+
+
+function disableMute(x) { 
+  x.muted = false;
+}
+</script>
+</body>
+</html>
