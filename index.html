@@ -1,72 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 <link rel="stylesheet" href="mystyle.css">
 <title>Proyecto del Coro Municipal</title>
 </head>
+
 <body>
+<nav>
+      <ul>
+        <li><a href="https://www.generalroca.gov.ar/">Página Principal</a></li>
+        <li><a href="https://www.facebook.com/">Facebook</a></li>
+        <li><a href="https://www.instagram.com/">Instagram</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
 <h1>Proyecto del Coro Municipal</h1>
-<div class="center">
-<button class="btn" onclick="myFunction()">Reproducir</button>
+
+<section class="center">
+<img src="images/vid.png" height="150" size="150" alt="Reproducir" onclick="myFunction();" id="img1">
+<img src="images/pause.png" height="150" size="150" alt="Pausar" onclick="pause();" id="img2">
+<img src="images/rewind.png" height="150" size="150" alt="Desde el comienzo" onclick="rewind();" id="img3">
+</section>
+
+<div>
+    <video width=80% height=auto id="myVid" muted>
+        <source src="videos/video.mp4" type="video/mp4">
+        
+      </video>
+
 </div>
 
-<div id="div1" class="center">
 
-</div>
-
-<div class="center">
-
-<button class="btn" onclick="enableMute(snd1)">Mutear track 1</button>
-<button class="btn" onclick="disableMute(snd1)" type="button">Enable sound1</button>
-
-<button class="btn" onclick="enableMute(snd2)" type="button">Mute sound2</button>
-<button class="btn" onclick="disableMute(snd2)" type="button">Enable sound2</button>
-</div>
+<div class="grid-container">
+    <div class="grid-item"><input onclick="change1(); enableDisableMute(snd1); colorBtn1();" type="button" value="Mutear Sopranos" id="myButton1"></input></div>
+    <div class="grid-item"><input onclick="change2(); enableDisableMute(snd2); colorBtn2();" type="button" value="Mutear Contraltos" id="myButton2"></input></div>
+    <div class="grid-item"><input onclick="change3(); enableDisableMute(snd3); colorBtn3();" type="button" value="Mutear Tenor" id="myButton3"></input></div>
+    <div class="grid-item"><input onclick="change4(); enableDisableMute(snd4); colorBtn4();" type="button" value="Mutear Bajo" id="myButton4"></input></div>
+    
+  </div>
 
 
-<script>
-function myFunction() {
-  var vid = document.createElement("VIDEO");
-
-  if (vid.canPlayType("video/mp4")) {
-    vid.setAttribute("src","videos/video.mp4");
-  } else {
-    x.setAttribute("src","videos/video.ogg");
-  }
-
-  vid.setAttribute("width", "320");
-  vid.setAttribute("height", "240");
-  vid.setAttribute("controls", "controls");
-  vid.autoplay = true;
-  vid.loop = true;
-vid.muted = true;
-  document.getElementById("div1").appendChild(vid);
 
 
-snd1.play(); snd2.play(); // Now both will play at the same time
 
 
-}
-var snd1  = new Audio();
-var src1  = document.createElement("source");
-src1.type = "audio/mpeg";
-src1.src  = "audio/bajos.mpeg";
-snd1.appendChild(src1);
 
-var snd2  = new Audio();
-var src2  = document.createElement("source");
-src2.type = "audio/mpeg";
-src2.src  = "audio/contraltos.mpeg";
-snd2.appendChild(src2);
-
-function enableMute(x) { 
-  x.muted = true;
-} 
-
-
-function disableMute(x) { 
-  x.muted = false;
-}
-</script>
+<script src="src/utils.js"></script>
 </body>
 </html>
