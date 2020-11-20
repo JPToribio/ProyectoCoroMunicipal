@@ -7,14 +7,16 @@
 </head>
 
 <body>
-<nav>
+
+  <div class="menu">
       <ul>
         <li><a href="https://www.generalroca.gov.ar/">Página Principal</a></li>
         <li><a href="https://www.facebook.com/">Facebook</a></li>
         <li><a href="https://www.instagram.com/">Instagram</a></li>
         <li><a href="#">About</a></li>
       </ul>
-    </nav>
+    </div>
+
 
 <h1>Proyecto del Coro Municipal</h1>
 
@@ -34,10 +36,10 @@
 
 
 <div class="grid-container">
-    <div class="grid-item"><input onclick="change1(); enableDisableMute(snd1); colorBtn1();" type="button" value="Mutear Sopranos" id="myButton1"></input></div>
-    <div class="grid-item"><input onclick="change2(); enableDisableMute(snd2); colorBtn2();" type="button" value="Mutear Contraltos" id="myButton2"></input></div>
-    <div class="grid-item"><input onclick="change3(); enableDisableMute(snd3); colorBtn3();" type="button" value="Mutear Tenores" id="myButton3"></input></div>
-    <div class="grid-item"><input onclick="change4(); enableDisableMute(snd4); colorBtn4();" type="button" value="Mutear Bajos" id="myButton4"></input></div>
+    <div class="grid-item" onclick="change1(); enableDisableMute(snd1); colorBtn1();" type="button" value="Sopranos" id="myButton1">Sopranos</div>
+    <div class="grid-item" onclick="change2(); enableDisableMute(snd2); colorBtn2();" type="button" value="Contraltos" id="myButton2">Contraltos</div>
+    <div class="grid-item" onclick="change3(); enableDisableMute(snd3); colorBtn3();" type="button" value="Tenores" id="myButton3">Tenores</div>
+    <div class="grid-item" onclick="change4(); enableDisableMute(snd4); colorBtn4();" type="button" value="Bajos" id="myButton4">Bajos</div>
     
   </div>
 
