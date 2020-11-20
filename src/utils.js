@@ -136,7 +136,7 @@ function colorBtn4() {
           btn4.classList.toggle("button4");
           }
 
-function img1() {
+/* function img1() {
   var img1 = document.getElementById("img1");
   img1.classList.toggle("img1");
   }
@@ -151,4 +151,4 @@ function img2() {
   function img3() {
     var img3 = document.getElementById("img3");
     img3.classList.toggle("img1");
-    }
+    } */
