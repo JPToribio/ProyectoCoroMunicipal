@@ -9,23 +9,38 @@
 
 <body>
 
-  <div class="menu">
-      <ul>
-        <li><a href="https://www.generalroca.gov.ar/">Página Principal</a></li>
-        <li><a href="https://www.facebook.com/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/">Instagram</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+  <div class="logos">
+    <div class="logos-item"><img class="imglog" src="images/municipio.png" alt="Logo del Municipio"></div>
+    <div class="logos-item"><img class="imglog" src="images/logo.png" alt="Logo del Coro"></div>
+    <div class="logos-item"><img class="imglog" src="images/cultura.gif" alt="Logo de Casa de la Cultura"></div>
+    
+  </div>
+
+  <div class="topnav">
+      
+        <div class="topnav-item"><a href="https://www.generalroca.gov.ar/">Home</a></div>
+        <div class="topnav-item"><a href="https://www.facebook.com/">Facebook</a></div>
+        <div class="topnav-item"><a href="https://www.instagram.com/">Instagram</a></div>
+        <div class="topnav-item"><a href="#">About</a></div>
+      
     </div>
 
+    
 
-<h1>Proyecto del Coro Municipal</h1>
+<div><h1>Proyecto del Coro Municipal</h1></div>
 
-<section class="center">
-<img src="images/vid.png" alt="Reproducir" onclick="myFunction();" id="img1">
-<img src="images/pause.png" alt="Pausar" onclick="pause();" id="img2">
-<img src="images/rewind.png" alt="Desde el comienzo" onclick="rewind();" id="img3">
-</section>
+<div class="texto">
+  <h2>“Quodlibet folklórico” - Coro Municipal de Cámara de Gral. Roca</h2>
+  <h3>CANCIÓN INTERACTIVA: Como si fueras el director, ¡Armá tu propia versión musical!</h3>
+  <h4>Un QUODLIBET es una obra musical compuesta por varias melodías o canciones sonando al mismo tiempo. En este caso, son cuatro motivos folklóricos del noroeste argentino.</h4>
+  <p>Te invitamos a crear:  Después de darle play, podés cliquear en los botones de abajo para “mutear” o “desmutear” cada voz a tu gusto (sopranos, contraltos, tenores y bajos).Podrás escuchar cada voz por separado, combinarlas como quieras y harás tu propia versión del quodlibet. ¡Que lo disfrutes!</p>
+</div>
+
+<div class="center">
+<img class="imgbtn" src="images/vid.png" alt="Reproducir" onclick="myFunction();" id="img1">
+<img class="imgbtn" src="images/pause.png" alt="Pausar" onclick="pause();" id="img2">
+<img class="imgbtn" src="images/rewind.png" alt="Desde el comienzo" onclick="rewind();" id="img3">
+</div>
 
 <div>
     <video width=80% height=auto id="myVid" muted>
@@ -37,11 +52,15 @@
 
 
 <div class="grid-container">
-    <div class="grid-item" onclick="change1(); enableDisableMute(snd1); colorBtn1();" type="button" value="Sopranos" id="myButton1">Sopranos</div>
-    <div class="grid-item" onclick="change2(); enableDisableMute(snd2); colorBtn2();" type="button" value="Contraltos" id="myButton2">Contraltos</div>
-    <div class="grid-item" onclick="change3(); enableDisableMute(snd3); colorBtn3();" type="button" value="Tenores" id="myButton3">Tenores</div>
-    <div class="grid-item" onclick="change4(); enableDisableMute(snd4); colorBtn4();" type="button" value="Bajos" id="myButton4">Bajos</div>
+    <div class="grid-item" onclick="enableDisableMute(snd1); colorBtn1();" type="button" value="Sopranos" id="myButton1">Sopranos</div>
+    <div class="grid-item" onclick="enableDisableMute(snd2); colorBtn2();" type="button" value="Contraltos" id="myButton2">Contraltos</div>
+    <div class="grid-item" onclick="enableDisableMute(snd3); colorBtn3();" type="button" value="Tenores" id="myButton3">Tenores</div>
+    <div class="grid-item" onclick="enableDisableMute(snd4); colorBtn4();" type="button" value="Bajos" id="myButton4">Bajos</div>
     
+  </div>
+
+  <div>
+    <p>Y aquí te compartimos nuestra versión virtual del “Quodlibet folklórico” realizada desde nuestras casas en noviembre 2020</p>
   </div>
 
 

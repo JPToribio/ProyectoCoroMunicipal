@@ -1,70 +1,93 @@
 body {
-  background-color: gray;
+  background-color: whitesmoke;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  width: 100%;
+  background-color: white;
+  overflow: hidden;
+  display: inline-grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 10px;
+}
+
+.topnav-item {
+  padding: 20px;
+  text-align: center;
+}
+
+.topnav-item:hover {
+  opacity: 0.5;
+}
+.topnav a {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   margin-left: 20px;
   text-align: center;
   font-size: 500%;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* Style buttons */
-.button-container {
-  background-color: rgb(119, 133, 148); /* Blue background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 20px 20px; /* Some padding */
-  font-size: 16px; /* Set a font size */
-  text-align: center;
-  margin: 20px;
+
+
+
+
+/* LOGOS */
+.logos {
+  overflow: hidden;
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
 }
-.button1 {
-  opacity: 0.5;
+.logos-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        
+  
+}
+.logos-item img {
+  width: 50%;
+  
 }
 
-.button2 {
-  opacity: 0.5;
-}
 
-.button3 {
-  opacity: 0.5;
-}
 
-.button4 {
-  opacity: 0.5;
-}
 
-/* Darker background on mouse-over */
-/*.btn:hover {
-  background-color: RoyalBlue;
-}*/
 
 .center {
-  margin: auto;
-  width: auto;
-  border: 3px solid black;
+  overflow: hidden;
+  
   padding: 10px 10px;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-items: center;
   row-gap: 10%;
-  background-color: #516b80;
 }
 
-.vid{
-  display: block;
-margin: 0 auto;
+.center img {
+  width:  20%;
+}
+
+.center img:hover {
+  opacity: 0.5;
 }
 
 video {
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
+
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  background-color: #516b80;
+  grid-column-gap: 10px;
   padding: 10px;
   align-items: center;
   justify-items: center;
@@ -72,6 +95,7 @@ video {
 
 .grid-item {
   padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   text-align: center;
   justify-self: stretch;
@@ -81,67 +105,33 @@ video {
   size: 50%;
 }
 .grid-item:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-img {
-  max-width: 20%;
-  height: auto;
-}
-
-.img1 {
   opacity: 0.5;
-}
-
-.img2 {
-  opacity: 1.0;
-}
-
-.img3 {
-  opacity: 1.0;
-}
   
-
-.img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-a {
-  color: black;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.texto h3, h4, p {
   font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  margin: 20px;
+  text-align: justify;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+.texto h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
 }
+
+/* Media */
 
 @media only screen and (max-width: 600px) {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  
-  padding: 0px;
+  grid-template-columns: auto auto;
+  grid-row-gap: 10px;
+  padding: 10px;
 }
 
 .grid-item {
@@ -150,12 +140,9 @@ li a:hover {
   text-align: center;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: greenyellow; 
+  
 }
 
-.grid-item:hover {
-  background-color: yellow;
-}
 
 
 .menu {

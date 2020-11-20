@@ -40,29 +40,34 @@ function rewind(){
   snd4.currentTime = 0;
 }
 var vid = document.getElementById("myVid");
+vid.loop = true;
 
 var snd1  = new Audio();
   var src1  = document.createElement("source");
   src1.type = "audio/mp3";
   src1.src  = "audio/sopranos.mp3";
+  snd1.loop = true;
   snd1.appendChild(src1);
   
   var snd2  = new Audio();
   var src2  = document.createElement("source");
   src2.type = "audio/mp3";
-  src2.src  = "audio/contralto.mp3";
+  src2.src  = "audio/contraltos.mp3";
+  snd2.loop = true;
   snd2.appendChild(src2);
   
   var snd3  = new Audio();
   var src3  = document.createElement("source");
   src3.type = "audio/mp3";
-  src3.src  = "audio/tenor.mp3";
+  src3.src  = "audio/tenores.mp3";
+  snd3.loop = true;
   snd3.appendChild(src3);
 
   var snd4  = new Audio();
   var src4  = document.createElement("source");
   src4.type = "audio/mp3";
-  src4.src  = "audio/bajo.mp3";
+  src4.src  = "audio/bajos.mp3";
+  snd4.loop = true;
   snd4.appendChild(src4);
 
   function enableDisableMute(x) { 
@@ -74,47 +79,48 @@ var snd1  = new Audio();
     }
     ;
   } 
-  
+  /*
   function change1()
 
   {
-    if (document.getElementById("myButton1").value == "Mutear Sopranos") {
-      document.getElementById("myButton1").value = "Desmutear Sopranos";
+    if (document.getElementById("myButton1").value == "Sopranos") {
+      document.getElementById("myButton1").value = "Sopranos";
     } else {
-      document.getElementById("myButton1").value = "Mutear Sopranos";
+      document.getElementById("myButton1").value = "Sopranos";
     }
   }
 
   function change2()
 
   {
-    if (document.getElementById("myButton2").value == "Mutear Contraltos") {
-      document.getElementById("myButton2").value = "Desmutear Contraltos";
+    if (document.getElementById("myButton2").value == "Contraltos") {
+      document.getElementById("myButton2").value = "Contraltos";
     } else {
-      document.getElementById("myButton2").value = "Mutear Contraltos";
+      document.getElementById("myButton2").value = "Contraltos";
     }
   }
 
   function change3()
 
   {
-    if (document.getElementById("myButton3").value == "Mutear Tenor") {
-      document.getElementById("myButton3").value = "Desmutear Tenor";
+    if (document.getElementById("myButton3").value == "Tenores") {
+      document.getElementById("myButton3").value = "Tenores";
     } else {
-      document.getElementById("myButton3").value = "Mutear Tenor";
+      document.getElementById("myButton3").value = "Tenores";
     }
   }
 
   function change4()
 
   {
-    if (document.getElementById("myButton4").value == "Mutear Bajo") {
-      document.getElementById("myButton4").value = "Desmutear Bajo";
+    if (document.getElementById("myButton4").value == "Bajos") {
+      document.getElementById("myButton4").value = "Bajos";
       
     } else {
-      document.getElementById("myButton4").value = "Mutear Bajo";
+      document.getElementById("myButton4").value = "Bajos";
     }
   }
+*/
 
   function colorBtn1() {
     var btn1 = document.getElementById("myButton1");
