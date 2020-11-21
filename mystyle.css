@@ -8,7 +8,7 @@ body {
 .topnav {
   width: 100%;
   background-color: white;
-  overflow: hidden;
+  
   display: inline-grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-column-gap: 10px;
@@ -158,6 +158,6 @@ h1 {
   font-size: 40px;
 }
 .logos-item img {
-  width: 100%; 
+  width: 200%; 
 }
 }
