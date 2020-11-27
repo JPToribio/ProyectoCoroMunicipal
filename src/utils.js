@@ -5,29 +5,29 @@ vid.loop = true;
 
 var snd1  = new Audio();
   var src1  = document.createElement("source");
-  src1.type = "audio/wav";
-  src1.src  = "audio/sopranos.wav";
+  src1.type = "audio/mp3";
+  src1.src  = "audio/sopranos.mp3";
   snd1.loop = true;
   snd1.appendChild(src1);
   
   var snd2  = new Audio();
   var src2  = document.createElement("source");
-  src2.type = "audio/wav";
-  src2.src  = "audio/contraltos.wav";
+  src2.type = "audio/mp3";
+  src2.src  = "audio/contraltos.mp3";
   snd2.loop = true;
   snd2.appendChild(src2);
   
   var snd3  = new Audio();
   var src3  = document.createElement("source");
-  src3.type = "audio/wav";
-  src3.src  = "audio/tenores.wav";
+  src3.type = "audio/mp3";
+  src3.src  = "audio/tenores.mp3";
   snd3.loop = true;
   snd3.appendChild(src3);
 
   var snd4  = new Audio();
   var src4  = document.createElement("source");
-  src4.type = "audio/wav";
-  src4.src  = "audio/bajos.wav";
+  src4.type = "audio/mp3";
+  src4.src  = "audio/bajos.mp3";
   snd4.loop = true;
   snd4.appendChild(src4);
 
