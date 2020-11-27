@@ -1,11 +1,13 @@
-function myFunction() {
-  if (document.readyState != "complete") {
-    alert("Por favor, esperar unos segundos hasta que el material esté cargado.");
-  } else {
-    vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
-  }
 
+function myFunction() {
+  if (vid.readyState == 4 && snd1.readyState == 4 && snd2.readyState == 4 && snd3.readyState == 4 && snd4.readyState == 4) {
+    vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
+  } else {
+    alert ("Por favor, esperar a que todos los audios estén cargados y volver a reproducir");
+  }
 }
+
+
 function pause(){
   vid.pause(); snd1.pause(); snd2.pause(); snd3.pause(); snd4.pause();
 }
