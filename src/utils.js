@@ -1,27 +1,10 @@
 function myFunction() {
-     /*var vid = document.createElement("VIDEO");
-  
-    if (vid.canPlayType("video/mp4")) {
-      vid.setAttribute("src","videos/video.mp4");
-    } else {
-      x.setAttribute("src","videos/video.ogg");
-    }
-  
-    vid.setAttribute("width", "320");
-    vid.setAttribute("height", "240");
-    vid.setAttribute("controls", "controls");
-    vid.autoplay = true;
-    vid.loop = true;
-  vid.muted = true;
-    document.getElementById("div1").appendChild(vid);
-  
-  
-  snd1.play(); snd2.play(); snd3.play(); snd4.play(); // Now both will play at the same time
-  
+  if (document.readyState == 'loading') {
+    alert("Por favor, esperar unos segundos hasta que el material esté cargado.");
+  } else {
+    vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
   }
-*/
 
-vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
 }
 function pause(){
   vid.pause(); snd1.pause(); snd2.pause(); snd3.pause(); snd4.pause();
