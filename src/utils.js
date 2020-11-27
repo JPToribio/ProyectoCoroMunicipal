@@ -1,5 +1,5 @@
 function myFunction() {
-  if (document.readyState == 'loading') {
+  if (document.readyState != 'complete') {
     alert("Por favor, esperar unos segundos hasta que el material esté cargado.");
   } else {
     vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
