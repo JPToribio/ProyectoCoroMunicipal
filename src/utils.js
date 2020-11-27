@@ -1,29 +1,5 @@
 
-function myFunction() {
-  if (vid.readyState == 4 && snd1.readyState == 4 && snd2.readyState == 4 && snd3.readyState == 4 && snd4.readyState == 4) {
-    vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
-  } else {
-    alert ("Por favor, esperar a que todos los audios estén cargados y volver a reproducir");
-  }
-}
 
-
-function pause(){
-  vid.pause(); snd1.pause(); snd2.pause(); snd3.pause(); snd4.pause();
-}
-
-function rewind(){
-  vid.pause(); 
-  vid.currentTime = 0;
-  snd1.pause();
-  snd1.currentTime = 0;
-  snd2.pause();
-  snd2.currentTime = 0;
-  snd3.pause();
-  snd3.currentTime = 0;
-  snd4.pause();
-  snd4.currentTime = 0;
-}
 var vid = document.getElementById("myVid");
 vid.loop = true;
 
@@ -135,19 +111,29 @@ function colorBtn4() {
           btn4.classList.toggle("button4");
           }
 
-/* function img1() {
-  var img1 = document.getElementById("img1");
-  img1.classList.toggle("img1");
-  }
-  
 
-function img2() {
-  
-  var img2 = document.getElementById("img2");
-  img2.classList.toggle("img1");
-  }
-
-  function img3() {
-    var img3 = document.getElementById("img3");
-    img3.classList.toggle("img1");
-    } */
+    function myFunction() {
+      if (vid.readyState == 4 && snd1.readyState == 4 && snd2.readyState == 4 && snd3.readyState == 4 && snd4.readyState == 4) {
+        vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
+      } else {
+        alert ("Por favor, esperar a que todos los audios estén cargados y volver a reproducir");
+      }
+    }
+    
+    
+    function pause(){
+      vid.pause(); snd1.pause(); snd2.pause(); snd3.pause(); snd4.pause();
+    }
+    
+    function rewind(){
+      vid.pause(); 
+      vid.currentTime = 0;
+      snd1.pause();
+      snd1.currentTime = 0;
+      snd2.pause();
+      snd2.currentTime = 0;
+      snd3.pause();
+      snd3.currentTime = 0;
+      snd4.pause();
+      snd4.currentTime = 0;
+    }
