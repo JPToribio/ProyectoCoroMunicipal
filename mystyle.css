@@ -136,18 +136,21 @@ video {
   opacity: 0.5;
   }
 #myButton1 {
-  background-color: orange;
+  background-color: #f19800;
+  border-radius: 25px;
 }
 
 #myButton2 {
-  background-color: green;
+  background-color: #0067b1;
+  border-radius: 25px;
 }
 #myButton3 {
-  background-color: blue;
+  background-color: #4ca92b;
+  border-radius: 25px;
 }
 #myButton4 {
-  background-color: palevioletred;
-
+  background-color: #dd0053;
+  border-radius: 25px;
 }
 .video2 {
   background-color: black;
