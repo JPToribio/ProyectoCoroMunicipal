@@ -4,65 +4,128 @@
 <head>
 <link rel="stylesheet" href="mystyle.css">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
-<title>Proyecto del Coro Municipal</title>
+<title>Coro Municipal de Cámara de Gral. Roca</title>
 </head>
 
 <body>
 
   <div class="logos">
-    <div class="logos-item"><img class="imglog" src="images/municipio.png" alt="Logo del Municipio"></div>
-    <div class="logos-item"><img class="imglog" src="images/logo.png" alt="Logo del Coro"></div>
-    <div class="logos-item"><img class="imglog" src="images/cultura.gif" alt="Logo de Casa de la Cultura"></div>
     
-  </div>
-
-  <div class="topnav">
+    <div class="logos-item-1"><img class="imglog" src="images/logo.png" alt="Logo del Coro"></div>
+    
+    <div class="logos-item-1">
       
-        <div class="topnav-item"><a href="https://www.generalroca.gov.ar/">Home</a></div>
-        <div class="topnav-item"><a href="https://www.facebook.com/">Facebook</a></div>
-        <div class="topnav-item"><a href="https://www.instagram.com/">Instagram</a></div>
-        <div class="topnav-item"><a href="#">About</a></div>
+        <div class="logos-item-2">
+          <div class="logos-item-3">
+            <div class="logos-item-4"><img class="imglog" src="images/cultura.gif" alt="Logo de Casa de la Cultura"></div>
+          </div>
+          <div class="logos-item-5">
+            <div class="logos-item-6">
+
+            </div>
+            <div class="logos-item-6">
+
+            
+            <div class="logos-item-7"><a href="https://www.facebook.com/corodecamaradegeneralroca"><img src="/images/facebook.png" alt="Facebook"></a></div>
+
+            <div class="logos-item-7"><a href="https://www.instagram.com/corodecamara.gr/"><img src="/images/instagram.png" alt="Instagram"></a></div>
+          </div>
+          </div>
+      </div>
+        
       
     </div>
+  </div>
 
-    
 
-<div><h1>Proyecto del Coro Municipal</h1></div>
+<div class="titulo"><h1>Coro Municipal de Cámara de Gral. Roca</h1></div>
 
 <div class="texto">
-  <h2>“Quodlibet folklórico” - Coro Municipal de Cámara de Gral. Roca</h2>
-  <h3>CANCIÓN INTERACTIVA: Como si fueras el director, ¡Armá tu propia versión musical!</h3>
-  <h4>Un QUODLIBET es una obra musical compuesta por varias melodías o canciones sonando al mismo tiempo. En este caso, son cuatro motivos folklóricos del noroeste argentino.</h4>
-  <p>Te invitamos a crear:  Después de darle play, podés cliquear en los botones de abajo para “mutear” o “desmutear” cada voz a tu gusto (sopranos, contraltos, tenores y bajos).Podrás escuchar cada voz por separado, combinarlas como quieras y harás tu propia versión del quodlibet. ¡Que lo disfrutes!</p>
-</div>
-
-<div class="center">
-<img class="imgbtn" src="images/vid.png" alt="Reproducir" onclick="myFunction();" id="img1">
-<img class="imgbtn" src="images/pause.png" alt="Pausar" onclick="pause();" id="img2">
-<img class="imgbtn" src="images/rewind.png" alt="Desde el comienzo" onclick="rewind();" id="img3">
-</div>
-
-<div class="vid">
-    <video width=80% height=auto id="myVid" muted>
-        <source src="videos/video.mp4" type="video/mp4">
-        
-      </video>
+  <h1>“Quodlibet folklórico”</h1>
+  <p>Un QUODLIBET es una obra musical compuesta por varias melodías o canciones sonando al mismo tiempo. En este caso, son cuatro motivos folklóricos del noroeste argentino.</p>
+  <h2>Canción interactiva:</h2>
+  <h3>Como si fueras el director, ¡Armá tu propia versión musical!</h3>
+  <p>Después de darle play, podés cliquear en los botones de abajo para “mutear” o “desmutear” cada voz a tu gusto (sopranos, contraltos, tenores y bajos). Podrás escuchar cada voz por separado, combinarlas como quieras y harás tu propia versión del quodlibet. ¡Que lo disfrutes!</p>
 
 </div>
 
+<div class="main">
+  <div class="consola">
+    <div class="reproducción">
+      <div class="imgbtn"><img  src="images/vid.png" alt="Reproducir" onclick="myFunction();" id="img1"></div>
+      <div class="imgbtn"><img  src="images/pause.png" alt="Pausar" onclick="pause();" id="img2"></div>
+      <div class="imgbtn"><img  src="images/rewind.png" alt="Desde el comienzo" onclick="rewind();" id="img3"></div>
+    </div>
+  
 
-<div class="grid-container">
-    <div class="grid-item" onclick="enableDisableMute(snd1); colorBtn1();" type="button" value="Sopranos" id="myButton1">Sopranos</div>
-    <div class="grid-item" onclick="enableDisableMute(snd2); colorBtn2();" type="button" value="Contraltos" id="myButton2">Contraltos</div>
-    <div class="grid-item" onclick="enableDisableMute(snd3); colorBtn3();" type="button" value="Tenores" id="myButton3">Tenores</div>
-    <div class="grid-item" onclick="enableDisableMute(snd4); colorBtn4();" type="button" value="Bajos" id="myButton4">Bajos</div>
+    <div class="tracks">
+      <div class="grid-item" onclick="enableDisableMute(snd1); colorBtn1(); change1();" type="button" value="Sopranos" id="myButton1">Mutear Sopranos</div>
+      <div class="grid-item" onclick="enableDisableMute(snd2); colorBtn2(); change2();" type="button" value="Contraltos" id="myButton2">Mutear Contraltos</div>
+      <div class="grid-item" onclick="enableDisableMute(snd3); colorBtn3(); change3();" type="button" value="Tenores" id="myButton3">Mutear Tenores</div>
+      <div class="grid-item" onclick="enableDisableMute(snd4); colorBtn4(); change4();" type="button" value="Bajos" id="myButton4">Mutear Bajos</div>
     
+    </div>
   </div>
+  
+  <div class="vid">
+    <video width=80% height=auto id="myVid" muted>
+      <source src="videos/video.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+
+
 
   <div>
     <p>Y aquí te compartimos nuestra versión virtual del “Quodlibet folklórico” realizada desde nuestras casas en noviembre 2020</p>
-  </div>
+    <div class="video2"><video>
 
+    </video></div>
+  </div>
+  
+  <div>
+    <h3>Créditos:</h3>
+    <h3>
+      Coro Municipal de Cámara de Gral. Roca - Directora: Laura Romero
+    </h3>
+    <h4>Participan en este video:</h4>
+    <div class="contenedor-texto">
+      <div class="texto"><p>
+Beatriz Maropoulos<br>
+Carina Aramburu<br>
+Claudia Zaffarana<br>
+Maia Pacheco Aoki<br>
+María Laura Sadorin<br>
+Selene Stenta<br>
+<br>
+Dominique Deraw<br>
+Gabriel Villanueva<br>
+Jorge Gallardo
+      </p></div>
+<div class="texto"><p>
+Ana María Alcalde<br>
+Andrea Segura<br>
+Claudia Grizmado<br>
+Lucía Trovato<br>
+Silvia Morris<br>
+Sophie Delvaux<br>
+<br>
+Ángel Santarelli<br>
+Jairo A. Gatica<br>
+Juan L. Felicito
+</p></div></div>
+<div class="creditos"><p>
+Edición de audio y video: Maia Pacheco Aoki<br>
+<br>
+Desarrollo web: Juan Pablo Toribio<br>
+<br>
+Realizado desde nuestras casas en noviembre 2020<br>
+<br>
+“Quodlibet folklórico” (Adaptación: Eduardo Retamar)
+
+</p></div>
+  </div>
 
 
 

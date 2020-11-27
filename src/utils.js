@@ -44,29 +44,29 @@ vid.loop = true;
 
 var snd1  = new Audio();
   var src1  = document.createElement("source");
-  src1.type = "audio/mp3";
-  src1.src  = "audio/sopranos.mp3";
+  src1.type = "audio/wav";
+  src1.src  = "audio/sopranos.wav";
   snd1.loop = true;
   snd1.appendChild(src1);
   
   var snd2  = new Audio();
   var src2  = document.createElement("source");
-  src2.type = "audio/mp3";
-  src2.src  = "audio/contraltos.mp3";
+  src2.type = "audio/wav";
+  src2.src  = "audio/contraltos.wav";
   snd2.loop = true;
   snd2.appendChild(src2);
   
   var snd3  = new Audio();
   var src3  = document.createElement("source");
-  src3.type = "audio/mp3";
-  src3.src  = "audio/tenores.mp3";
+  src3.type = "audio/wav";
+  src3.src  = "audio/tenores.wav";
   snd3.loop = true;
   snd3.appendChild(src3);
 
   var snd4  = new Audio();
   var src4  = document.createElement("source");
-  src4.type = "audio/mp3";
-  src4.src  = "audio/bajos.mp3";
+  src4.type = "audio/wav";
+  src4.src  = "audio/bajos.wav";
   snd4.loop = true;
   snd4.appendChild(src4);
 
@@ -79,48 +79,56 @@ var snd1  = new Audio();
     }
     ;
   } 
-  /*
+  
   function change1()
 
   {
-    if (document.getElementById("myButton1").value == "Sopranos") {
-      document.getElementById("myButton1").value = "Sopranos";
+    if (document.getElementById("myButton1").innerHTML == "Mutear Sopranos") {
+      document.getElementById("myButton1").innerHTML = "Desmutear Sopranos";
+      document.getElementById("myButton1").style.opacity = "0.5";
     } else {
-      document.getElementById("myButton1").value = "Sopranos";
+      document.getElementById("myButton1").innerHTML = "Mutear Sopranos";
+      document.getElementById("myButton1").style.opacity = "1.0";
     }
   }
 
   function change2()
 
   {
-    if (document.getElementById("myButton2").value == "Contraltos") {
-      document.getElementById("myButton2").value = "Contraltos";
+    if (document.getElementById("myButton2").innerHTML == "Mutear Contraltos") {
+      document.getElementById("myButton2").innerHTML = "Desmutear Contraltos";
+      document.getElementById("myButton2").style.opacity = "0.5";
     } else {
-      document.getElementById("myButton2").value = "Contraltos";
+      document.getElementById("myButton2").innerHTML = "Mutear Contraltos";
+      document.getElementById("myButton2").style.opacity = "1.0";
     }
   }
 
   function change3()
 
   {
-    if (document.getElementById("myButton3").value == "Tenores") {
-      document.getElementById("myButton3").value = "Tenores";
+    if (document.getElementById("myButton3").innerHTML == "Mutear Tenores") {
+      document.getElementById("myButton3").innerHTML = "Desmutear Tenores";
+      document.getElementById("myButton3").style.opacity = "0.5";
     } else {
-      document.getElementById("myButton3").value = "Tenores";
+      document.getElementById("myButton3").innerHTML = "Mutear Tenores";
+      document.getElementById("myButton3").style.opacity = "1.0";
     }
   }
 
+  
   function change4()
 
   {
-    if (document.getElementById("myButton4").value == "Bajos") {
-      document.getElementById("myButton4").value = "Bajos";
-      
+    if (document.getElementById("myButton4").innerHTML == "Mutear Bajos") {
+      document.getElementById("myButton4").innerHTML = "Desmutear Bajos";
+      document.getElementById("myButton4").style.opacity = "0.5";
     } else {
-      document.getElementById("myButton4").value = "Bajos";
+      document.getElementById("myButton4").innerHTML = "Mutear Bajos";
+      document.getElementById("myButton4").style.opacity = "1.0";
     }
   }
-*/
+
 
   function colorBtn1() {
     var btn1 = document.getElementById("myButton1");
