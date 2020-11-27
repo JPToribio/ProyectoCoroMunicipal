@@ -1,5 +1,5 @@
 function myFunction() {
-  if (vid.readyState !== 4 && snd1.readyState !== 4 && snd2.readyState !== 4 && snd3.readyState !== 4 && snd4.readyState !== 4) {
+  if (vid.readyState !== 4 && src1.readyState !== 4 && src2.readyState !== 4 && src3.readyState !== 4 && src4.readyState !== 4) {
     alert("Por favor, esperar unos segundos hasta que el material esté cargado.");
   } else {
     vid.play(); snd1.play(); snd2.play(); snd3.play(); snd4.play();
