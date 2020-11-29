@@ -274,16 +274,35 @@ h4 {
 p {
   font-size: 100%;
 }
-.logos-item-7 img {
-width: 90%;
-height: auto;
 
-}
 .texto p {
   font-size: 100%;
 }
 .video2 {
   width: 90%;
   height: auto;
+}
+
+
+.logos {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: whitesmoke;
+  height: 20%;
+}
+.imglog {
+  width: 100%;
+}
+
+#banner {
+  width: 50%;
+  justify-self: center;
+}
+.logos2 {
+  display: grid;
+  grid-template-columns: 70% 15% 15%;
+  text-align: center;
+  align-items: center;
 }
 }
