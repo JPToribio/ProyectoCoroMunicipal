@@ -2,21 +2,19 @@ body {
   background-color: #59707c;
 }
 
-h1, h2, h3, p {
-  color: whitesmoke;
-  margin: 10%;
-  text-align: center;
-  
-  font-family: Helvetica, Arial, sans-serif;
-}
+
 h1 {
-  font-size: 600%;
+  font-size: 500%;
+  line-height: 2em;
+  
 }
 h2 {
   font-size: 450%;
+  line-height: 2em;
 }
 h3 {
   font-size: 300%;
+  line-height: 2em;
 }
 p {
   font-size: 150%;
@@ -109,16 +107,11 @@ p {
 .reproducción img:hover {
   opacity: 0.5;
 }
-video {
-  display: block;
-  margin: auto;
-}
-
 
 
 .grid-item {
   color: whitesmoke;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 100%;
   text-align: center;
   justify-self: stretch;
@@ -158,11 +151,32 @@ video {
   width: 800px;
   margin: auto auto;
 }
-.texto p {
-  color: whitesmoke;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 150%;
+.videoTexto p {
+  padding: 5%;
 }
+/* .wrapper {
+  display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+} */
+.texto, .titulo, .videoTexto, .creditos {
+  line-height: 3em;
+  text-decoration: none;
+  padding: 0% 5% 0% 5%;
+  color: whitesmoke;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  vertical-align: middle;
+  margin: auto;
+  text-align: center;
+}
+.texto p {
+  padding-top: 0%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+  padding-left: 5%;
+}
+
 .creditos {
   margin: 10% 10%;
 }
@@ -174,10 +188,62 @@ video {
 
 h4 {
   color: whitesmoke;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 200%;
   text-align: center;
 }
+
+.vid {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  display: block;
+  margin: auto;
+}
+
+#overlay {
+  width: 100%;
+  height: 18%;            
+  position: absolute;
+  top: 25%;
+  left: 0;
+  background-color: #f19800;
+  opacity: 0.5;
+  z-index: 9;
+}
+
+#overlay2 {
+  width: 100%;
+  height: 18%;            
+  position: absolute;
+  top: 43%;
+  background-color: #0067b1;
+  opacity: 0.5;
+  z-index: 9;
+}
+
+#overlay3 {
+  width: 100%;
+  height: 18%;            
+  position: absolute;
+  top: 61%;
+  background-color: #4ca92b;
+  opacity: 0.5;
+  z-index: 9;
+}
+
+#overlay4 {
+  width: 100%;
+  height: 18%;            
+  position: absolute;
+  top: 79%;
+  background-color: #dd0053;
+  opacity: 0.5;
+  z-index: 9;
+}
+
 /* Media */
 /*.titulo h1 {
   width: 90%;
@@ -215,9 +281,7 @@ video {
   width: 100%;
   height: auto;
 }
-h1 {
-  font-size: 200%;
-}
+
 h2 {
   font-size: 150%;
 }

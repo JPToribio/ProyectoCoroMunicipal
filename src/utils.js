@@ -137,3 +137,20 @@ function colorBtn4() {
       snd4.pause();
       snd4.currentTime = 0;
     }
+    
+    const over = document.getElementById("overlay");
+    const over2 = document.getElementById("overlay2");
+    const over3 = document.getElementById("overlay3");
+    const over4 = document.getElementById("overlay4");
+    
+    function on(over) {
+      
+      if (over.getAttribute("on") === undefined || over.getAttribute("on") == "false") {
+        over.style.display = "block";
+        over.setAttribute("on", true);
+
+    } else {
+      over.style.display = "none";
+      over.setAttribute("on", false);
+    }
+  }

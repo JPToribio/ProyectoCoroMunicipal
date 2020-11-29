@@ -37,15 +37,16 @@
     </div>
   </div>
 
-
+<div class="wrapper">
+  
 <div class="titulo"><h1>Coro Municipal de Cámara de Gral. Roca</h1></div>
 
 <div class="texto">
   <h1>“Quodlibet folklórico”</h1>
-  <p>Un QUODLIBET es una obra musical compuesta por varias melodías o canciones sonando al mismo tiempo. En este caso, son cuatro motivos folklóricos del noroeste argentino.</p>
+  <p>Un <i>QUODLIBET</i> es una obra musical compuesta por varias melodías o canciones sonando al mismo tiempo. En este caso, son cuatro motivos folklóricos del noroeste argentino.</p>
   <h2>Canción interactiva:</h2>
   <h3>Como si fueras el director, ¡Armá tu propia versión musical!</h3>
-  <p>Después de darle play, podés cliquear en los botones de abajo para “mutear” o “desmutear” cada voz a tu gusto (sopranos, contraltos, tenores y bajos). Podrás escuchar cada voz por separado, combinarlas como quieras y harás tu propia versión del quodlibet. ¡Que lo disfrutes!</p>
+  <p>Después de <i>darle play</i>, podés cliquear en los botones de abajo para “mutear” o “desmutear” cada voz a tu gusto (sopranos, contraltos, tenores y bajos). Podrás escuchar cada voz por separado, combinarlas como quieras y harás tu propia versión del quodlibet. ¡Que lo disfrutes!</p>
 
 </div>
 
@@ -59,32 +60,38 @@
   
 
     <div class="tracks">
-      <div class="grid-item" onclick="enableDisableMute(snd1); colorBtn1(); change1();" type="button" value="Sopranos" id="myButton1">Mutear Sopranos</div>
-      <div class="grid-item" onclick="enableDisableMute(snd2); colorBtn2(); change2();" type="button" value="Contraltos" id="myButton2">Mutear Contraltos</div>
-      <div class="grid-item" onclick="enableDisableMute(snd3); colorBtn3(); change3();" type="button" value="Tenores" id="myButton3">Mutear Tenores</div>
-      <div class="grid-item" onclick="enableDisableMute(snd4); colorBtn4(); change4();" type="button" value="Bajos" id="myButton4">Mutear Bajos</div>
+      <div class="grid-item" onclick="enableDisableMute(snd1); colorBtn1(); change1(); on(over);" type="button" value="Sopranos" id="myButton1">Mutear Sopranos</div>
+      <div class="grid-item" onclick="enableDisableMute(snd2); colorBtn2(); change2(); on(over2)" type="button" value="Contraltos" id="myButton2">Mutear Contraltos</div>
+      <div class="grid-item" onclick="enableDisableMute(snd3); colorBtn3(); change3(); on(over3)" type="button" value="Tenores" id="myButton3">Mutear Tenores</div>
+      <div class="grid-item" onclick="enableDisableMute(snd4); colorBtn4(); change4(); on(over4)" type="button" value="Bajos" id="myButton4">Mutear Bajos</div>
     
     </div>
   </div>
   
   <div class="vid">
+    
+    
     <video width=80% height=auto id="myVid" muted>
       <source src="videos/video.mp4" type="video/mp4">
     </video>
+    <div id="overlay"></div>
+    <div id="overlay2"></div>
+    <div id="overlay3"></div>
+    <div id="overlay4"></div>
   </div>
 </div>
 
 
 
 
-  <div>
+  <div class="videoTexto">
     <p>Y aquí te compartimos nuestra versión virtual del “Quodlibet folklórico” realizada desde nuestras casas en noviembre 2020</p>
     <div class="video2"><video>
 
     </video></div>
   </div>
   
-  <div>
+  <!-- <div>
     <h3>Créditos:</h3>
     <h3>
       Coro Municipal de Cámara de Gral. Roca - Directora: Laura Romero
@@ -114,24 +121,22 @@ Sophie Delvaux<br>
 Ángel Santarelli<br>
 Jairo A. Gatica<br>
 Juan L. Felicito
-</p></div></div>
-<div class="creditos"><p>
-Edición de audio y video: Maia Pacheco Aoki<br>
-<br>
-Desarrollo web: Juan Pablo Toribio<br>
-<br>
-Realizado desde nuestras casas en noviembre 2020<br>
-<br>
-“Quodlibet folklórico” (Adaptación: Eduardo Retamar)
-
-</p></div>
+</p></div></div> -->
+<div class="creditos">
+  <p>“Quodlibet folklórico” (Adaptación: Eduardo Retamar)<br>
+    Realizado desde nuestras casas en noviembre 2020<br>
+    <br>
+    Coro Municipal de Cámara de Gral Roca (Dirección Laura Romero)<br>
+    Desarrollo Web: Juan Pablo Toribio<br>
+    Edición de audio y video: Maia Pacheco Aoki<br>
+    Edición  del video interactivo: Ezequiel Ziaurriz Culla<br></p></div>
   </div>
 
 
 
 
 
-
+</div>
 <script src="src/utils.js"></script>
 </body>
 </html>
