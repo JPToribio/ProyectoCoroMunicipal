@@ -25,49 +25,26 @@ p {
 .logos {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 50% 50%;
-  width: 100%;
-  background-color: whitesmoke;  
+  grid-template-columns: 20% 80%;
+  background-color: whitesmoke;
+  height: 10%;  
 }
-.logos-item-1 img {
-  width: 100%;
-  
+.imglog {
+  width: 80%;
 }
-.logos-item-1 {
+#banner {
   width: 50%;
+  justify-self: center;
 }
-.logos-item-3 {
-  height: 100%;
-}
-.logos-item-5 {
-  height: 100%;
-}
-
-.logos-item-1 {
-  width: 100%;
-  
-}
-
-.logos-item-2 {
-  height: 100%;
+.logos2 {
   display: grid;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 80% 10% 10%;
+  text-align: center;
+  align-items: center;
 }
 
-.logos-item-5 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-.logos-item-5 img {
-  height: 50px;
-  width: auto;
-}
 
-.logos-item-6 {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-items: center;
-}
+
 
 
 
