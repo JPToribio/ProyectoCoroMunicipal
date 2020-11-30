@@ -221,6 +221,8 @@ video {
   z-index: 9;
 }
 
+
+
 /* Media */
 /*.titulo h1 {
   width: 90%;
@@ -252,12 +254,15 @@ video {
   align-items: center;
   justify-items: center;
 }
-video {
-  /* display: flex;
-  margin: auto; */
+/* video {
   width: 100%;
   height: auto;
-}
+} */
+
+/* .video2 {
+  width: 90%;
+  height: auto;
+} */
 
 h1 {
   font-size: 200%;
@@ -278,10 +283,7 @@ p {
 .texto p {
   font-size: 100%;
 }
-.video2 {
-  width: 90%;
-  height: auto;
-}
+
 
 
 .logos {
