@@ -43,11 +43,6 @@ p {
   align-items: center;
 }
 
-
-
-
-
-
 .main {
   overflow: hidden;
   padding: 5%;
@@ -75,10 +70,9 @@ p {
 }
 .tracks {
   display: grid;
-  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-rows: 23% 23% 23% 23%;
+  row-gap: 2%;
   width: 100%;
-  /* align-items: center; */
-  /* justify-items: center; */
   margin-top: 2%;
   margin-bottom: 5%;
 }
@@ -93,10 +87,10 @@ p {
   font-size: 120%;
   text-align: center;
   justify-self: stretch;
-  padding: 12%;
-  height: 23%;
-  }
-
+  padding: 4%;
+  height: 73%;
+  line-height: 4em;
+}
 .grid-item:hover {
   opacity: 0.5;
   
@@ -233,12 +227,13 @@ video {
   display: grid;
   grid-template-rows: auto auto;
   grid-template-columns: auto;
+  
 }
 
 .consola {
   display: grid;
   grid-template-rows: auto auto;
-  }
+}
 
 .reproducción {
   display: grid;
@@ -247,14 +242,20 @@ video {
 }
 
 .tracks {
-  margin-top: 2%;
+  display: grid;
+  margin-top: 5%;
   margin-bottom: 5%;
-  row-gap: 2%;
-  }
+  height: 300px;
+  row-gap: 1%;
+  width: 100%;
+  
+}
 
 .grid-item {
-    font-size: 200%;
-    padding: 5%;
+    font-size: 100%;
+    padding: 3%;
+    height: 50%;
+    line-height: 2em;
 }
 
 h1 {
@@ -289,7 +290,7 @@ p {
   height: 20%;
 }
 .imglog {
-  width: 100%;
+  width: 80%;
 }
 
 #banner {
