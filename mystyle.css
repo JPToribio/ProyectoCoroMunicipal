@@ -53,7 +53,6 @@ p {
   grid-column-gap: 3%;
 }
 
-
 .consola {
   display: grid;
   grid-template-rows: 25% 75%;
@@ -72,7 +71,6 @@ p {
   display: grid;
   grid-template-rows: 23% 23% 23% 23%;
   row-gap: 2%;
-  width: 100%;
   margin-top: 2%;
   margin-bottom: 5%;
 }
@@ -80,7 +78,9 @@ p {
   opacity: 0.5;
 }
 
-
+.vid {
+  width: 100%;
+}
 .grid-item {
   color: whitesmoke;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -237,16 +237,20 @@ video {
 
 .reproducción {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: auto auto auto;
+  height: 20%;
+  
 }
-
+.imgbtn {
+  width: 50%;
+  margin: auto auto;
+}
 .tracks {
   display: grid;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 300px;
-  row-gap: 1%;
+  grid-template-rows: 23% 23% 23% 23%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  row-gap: 2%;
   width: 100%;
   
 }
